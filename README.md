@@ -17,7 +17,6 @@ Run the following on Mac or Linux to install Codex CLI:
 
 ```ps1
 curl -fsSL https://chatgpt.com/codex/install.sh | sh
-codex-aarch64-apple-darwin.tar.gz
 ```
 
 Run the following on Windows to install Codex CLI:
