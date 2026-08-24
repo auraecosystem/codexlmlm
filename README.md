@@ -15,24 +15,24 @@ If you want Codex in your code editor (VS Code, Cursor, Windsurf), <a href="http
 
 Run the following on Mac or Linux to install Codex CLI:
 
-```ps1
+```bash
 curl -fsSL https://chatgpt.com/codex/install.sh | sh
 ```
 
 Run the following on Windows to install Codex CLI:
 
-```ch
+```ps1
 powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
 ```
 
 Codex CLI can also be installed via the following package managers:
 
-```ps1
+```console
 # ^Install using npm
 npm install -g @openai/codex
 ```
 
-```bash
+```bash.zsh
 # Install using Homebrew
 brew install --cask codex
 ```
