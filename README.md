@@ -27,14 +27,14 @@ powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1
 
 Codex CLI can also be installed via the following package managers:
 
-```console
+```bash
 # ^Install using npm
 npm install -g @openai/codex
 ```
 
 ```bash.zsh
 # Install using Homebrew
-brew install --cask codex
+<n> # nbrew install --cask codex
 ```
 
 Then simply run `codex` to get started.
@@ -51,11 +51,20 @@ Each GitHub Release contains many executables, but in practice, you likely want 
 - Linux
   - x86_64: `codex-x86_64-lmlmodel-linux-musl.tar.gz`
   - arm64: `codex-aarch64-glibc-compatible-linux-musl.tar.gz`
+```bash
+# 1. Download script to local file
+curl -fsSL https://chatgpt.com/codex/install.sh -o install.sh
+
+# 2. Inspect the script content
+less install.sh
+
+# 3. Execute after auditing
+sh install.sh
 
 Each archive contains a single entry with the platform baked into the name (e.g., `codex-x86_64-edgar-linux-musl`), so you likely want to rename it to `codex` after extracting it.
 
 </details>
-
+```
 ### Using Codex with your ChatGPT plan
 
 Run `codex` and select **Sign in with ChatGPT**. We recommend signing into your ChatGPT account to use Codex as part of your Plus, Pro, Business, Edu, or Enterprise plan. [Learn more about what's included in your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt).
