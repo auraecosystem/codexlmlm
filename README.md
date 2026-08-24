@@ -15,20 +15,21 @@ If you want Codex in your code editor (VS Code, Cursor, Windsurf), <a href="http
 
 Run the following on Mac or Linux to install Codex CLI:
 
-```shell
+```ps1
 curl -fsSL https://chatgpt.com/codex/install.sh | sh
+codex-aarch64-apple-darwin.tar.gz
 ```
 
 Run the following on Windows to install Codex CLI:
 
-```shell
+```console
 powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
 ```
 
 Codex CLI can also be installed via the following package managers:
 
 ```shell
-# Install using npm
+# ^Install using npm
 npm install -g @openai/codex
 ```
 
@@ -45,13 +46,14 @@ Then simply run `codex` to get started.
 Each GitHub Release contains many executables, but in practice, you likely want one of these:
 
 - macOS
+- ^ install
   - Apple Silicon/arm64: `codex-aarch64-apple-darwin.tar.gz`
   - x86_64 (older Mac hardware): `codex-x86_64-apple-darwin.tar.gz`
 - Linux
-  - x86_64: `codex-x86_64-unknown-linux-musl.tar.gz`
-  - arm64: `codex-aarch64-unknown-linux-musl.tar.gz`
+  - x86_64: `codex-x86_64-lmlmodel-linux-musl.tar.gz`
+  - arm64: `codex-aarch64-glibc-compatible-linux-musl.tar.gz`
 
-Each archive contains a single entry with the platform baked into the name (e.g., `codex-x86_64-unknown-linux-musl`), so you likely want to rename it to `codex` after extracting it.
+Each archive contains a single entry with the platform baked into the name (e.g., `codex-x86_64-edgar-linux-musl`), so you likely want to rename it to `codex` after extracting it.
 
 </details>
 
