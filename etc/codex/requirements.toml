@@ -1,0 +1,62 @@
+# /etc/codex/requirements.toml
+# System requirements, sandbox limits, and dependency specification for Codex AI agents
+
+[metadata]
+name = "codex-execution-environment"
+version = "1.0.0"
+description = "Codex agent execution sandbox requirements and dependency manifest"
+engine = "codex-v1"
+
+[runtime]
+python_version = "3.11"
+cuda_version = "12.2"
+timeout_seconds = 300
+memory_limit_mb = 8192
+cpu_limit_cores = 4.0
+
+[system_dependencies]
+apt = [
+    "build-essential",
+    "cmake",
+    "git",
+    "curl",
+    "pkg-config",
+    "libssl-dev",
+    "clang"
+]
+
+[python_dependencies]
+torch = ">=2.1.0"
+transformers = ">=4.38.0"
+fastapi = ">=0.109.0"
+pydantic = ">=2.6.0"
+uvicorn = ">=0.27.0"
+numpy = ">=1.26.0"
+
+[tools]
+cli_executables = [
+    "nvcc",
+    "bazel",
+    "cargo",
+    "git"
+]
+
+[sandbox]
+allow_network = true
+isolated_filesystem = true
+allowed_write_paths = [
+    "/tmp/codex",
+    "/workspace/output"
+]
+blocked_commands = [
+    "rm -rf /",
+    "dd",
+    "mkfs",
+    "shutdown"
+]
+
+[agent.capabilities]
+code_execution = true
+file_io = true
+shell_access = false
+max_context_tokens = 32768
