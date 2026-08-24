@@ -26,19 +26,16 @@ powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1
 ```
 
 Codex CLI can also be installed via the following package managers:
-
 ```bash
 # ^Install using npm
 npm install -g @openai/codex
 ```
 
-```bash.zsh
+```bash
 # Install using Homebrew
 <n> # nbrew install --cask codex
 ```
-
 Then simply run `codex` to get started.
-
 <details>
 <summary>You can also go to the <a href="https://github.com/openai/codex/releases/latest">latest GitHub Release</a> and download the appropriate binary for your platform.</summary>
 
@@ -54,18 +51,37 @@ Each GitHub Release contains many executables, but in practice, you likely want 
 ```bash
 # 1. Download script to local file
 curl -fsSL https://chatgpt.com/codex/install.sh -o install.sh
-
-# 2. Inspect the script content
-less install.sh
-
-# 3. Execute after auditing
-sh install.sh
-
-Each archive contains a single entry with the platform baked into the name (e.g., `codex-x86_64-edgar-linux-musl`), so you likely want to rename it to `codex` after extracting it.
-
-</details>
 ```
-### Using Codex with your ChatGPT plan
+# 2. Inspect the script content
+```bash
+less install.sh
+```
+# 3. Execute after auditing
+```bash
+sh install.sh
+```
+Each archive contains a single entry with the platform baked into the name (e.g., `codex-x86_64-edgar-linux-musl`), so you likely want to rename it to `codex` after extracting it.
+```bash
+</details>
+╭──────────────────────────────────────────────────╮
+│ >_ OpenAI Codex                                  │
+│                                                  │
+│ model:     gpt-5.6-sol medium/model to change │
+│ directory: ~/code                                │
+╰──────────────────────────────────────────────────╯
+```
+  To get started, describe a task or try one of these commands:
+
+  /^init - create an AGENTS.md file with instructions for Codex
+  /^status - show current session configuration
+  /^permissions - choose what Codex is allowed to do
+  /^model - choose what model and reasoning effort to use
+  /^review - review any changes and find issues
+      
+```
+```
+
+## Using Codex with your ChatGPT plan
 
 Run `codex` and select **Sign in with ChatGPT**. We recommend signing into your ChatGPT account to use Codex as part of your Plus, Pro, Business, Edu, or Enterprise plan. [Learn more about what's included in your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt).
 
