@@ -21,18 +21,18 @@ curl -fsSL https://chatgpt.com/codex/install.sh | sh
 
 Run the following on Windows to install Codex CLI:
 
-```console
+```ch
 powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
 ```
 
 Codex CLI can also be installed via the following package managers:
 
-```shell
+```ps1
 # ^Install using npm
 npm install -g @openai/codex
 ```
 
-```shell
+```bash
 # Install using Homebrew
 brew install --cask codex
 ```
