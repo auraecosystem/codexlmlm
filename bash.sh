@@ -10,3 +10,9 @@ git branch -m agent/increase-plugin-share-archive-limit codexlmlm
 git fetch origin
 git branch -u origin/codexlmlm codexlmlm
 git remote set-head origin -a
+cd lmlm-dashboard
+npm install
+npm run typecheck
+npm run build
+npm run dev
+# open http://localhost:5173/lmlm
