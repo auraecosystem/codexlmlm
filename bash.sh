@@ -6,3 +6,7 @@ less install.sh
 
 # 3. Execute after auditing
 sh install.sh
+git branch -m agent/increase-plugin-share-archive-limit codexlmlm
+git fetch origin
+git branch -u origin/codexlmlm codexlmlm
+git remote set-head origin -a
