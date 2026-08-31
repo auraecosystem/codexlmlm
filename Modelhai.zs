@@ -884,7 +884,8 @@ def compute_challenge_metric_for_opt(labels, outputs):
         0.475 , 0.475 , 0.4   , 0.4375, 0.45  , 0.4   , 0.4   , 0.35  ,
         0.475 , 0.475 , 0.4   , 0.45  , 0.45  , 1.    , 0.4   , 0.4375,
         0.45  , 0.4   , 1.    ]])
-    
+
+    l
     num_recordings, num_classes = np.shape(labels)
     normal_index = classes.index(normal_class)
 
