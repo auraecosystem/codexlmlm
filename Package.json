@@ -1,0 +1,25 @@
+{
+  "name": "codexlmlm",
+  "version": "0.116.0",
+  "description": "Local AI coding agent CLI powered by qubuhub",
+  "type": "module",
+  "main": "./bin/codexlmlm.js",
+  "bin": {
+    "codex": "./bin/codexlmlm.js"
+  },
+  "scripts": {
+    "start": "node ./bin/codexlmlm.js"
+  },
+  "optionalDependencies": {
+    "@openai/codex-darwin-arm64": "0.116.0",
+    "@openai/codex-darwin-x64": "0.116.0",
+    "@openai/codex-linux-arm64": "0.116.0",
+    "@openai/codex-linux-x64": "0.116.0",
+    "@openai/codex-win32-arm64": "0.116.0",
+    "@openai/codex-win32-x64": "0.116.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
