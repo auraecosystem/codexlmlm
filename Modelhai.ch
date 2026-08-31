@@ -173,7 +173,7 @@ def plot_all_folds(folds,y,onehot_enc):
         plt.xticks(rotation=90, fontsize=10)
         plt.yticks(fontsize = 10)
         h=h+1
-        
+         
 def get_val_data(validation_filename):
     ecg_val_timeseries=[]
     for names in validation_filename:
