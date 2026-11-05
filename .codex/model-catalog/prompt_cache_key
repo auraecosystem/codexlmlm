@@ -1,0 +1,13 @@
+#!/bin/env bash
+
+POST https://inference.do-ai.run/v1/chat/completions
+
+{
+
+  "model": "kimi-k3",
+
+  "messages": [ "... your system prompt, tools, and conversation ..." ],
+
+  "prompt_cache_key": "tenant-4821-support-agent"
+
+}
